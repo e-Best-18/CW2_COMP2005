@@ -1,8 +1,8 @@
 public class Main {
 
-    public static void main(String[] args) throws Exception, NumNotInRangeException {
+    public static void main(String[] args) throws Exception, CustomException {
         //parsing API JSON to a JSONArray called data_arr
-        HandleJSON.parseJSON();
+        HandleJSON.parseJSON(HandleJSON.getURL(HandleJSON.url_string));
         //filling JSONArrays with the information about each data
         HandleJSON.createArrays();
 

@@ -48,7 +48,7 @@ public class Requirement1 {
         }
     }
 
-    public static void handleRequirement1(String input) throws Exception, NumNotInRangeException {
+    public static void handleRequirement1(String input) throws Exception, CustomException {
         int input_int = Integer.parseInt(input);
         String output = "";
         do {

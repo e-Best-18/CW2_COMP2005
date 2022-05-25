@@ -10,7 +10,7 @@ public class HandleUserInput {
         return input;
     }
 
-    public static String handleUserInput(String input) throws  NumNotInRangeException {
+    public static String handleUserInput(String input) throws CustomException {
         int input_int = Integer.parseInt(input);
 
         String output;
@@ -18,7 +18,7 @@ public class HandleUserInput {
         do {
             if (input_int < 2003 || input_int > 2016) {
                 System.out.println(input_int + " is not in the range of 2003 - 2016");
-                throw new NumNotInRangeException("Number not within range");
+                throw new CustomException("Number not within range");
                 //input_int = Integer.parseInt(getUserInput());
             }
         } while (input_int < 2003 || input_int > 2016);
